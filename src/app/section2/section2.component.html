@@ -1,0 +1,47 @@
+
+<div class="bg2 pb-5"  >
+    <div class="container-fluid pb-5">
+      <div class="row justify-content-md-center w-100">
+        <div class="mx-auto pt-5">
+            <p class="text-uppercase text-center text-danger">
+                EXPLORE OUR SERVICES
+            </p>
+          <div class="col-sm text-center">
+            <img class="img-fluid mb-5 d-block mx-auto" src="../../assets/img/images/title _line_section@2x.png"  alt="...">
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <div>
+          <div class="carousel-inner row w-75 mx-auto"  >
+              <div class="carousel-item col-md-4 "  *ngFor="let glam of myGlam.data; index as i"  [class.active]="i === 0"  >
+                  <div class="card">
+                 <img [class.img] src="http://{{glam.imagePath}}" alt="Card image cap">
+                 <div class="card-body">
+                  <h4 class="card-title text-center">{{glam.label}}</h4>
+                 <p class="card-text">{{glam.description}}</p>
+                   </div>
+                  </div>
+                  </div>
+          </div>
+       </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <div class="row">
+          <div class="col text-center">
+            <button class="btn btn-danger btn_dng" >EXPLORE ALL</button>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+
+  <hr/>
+
